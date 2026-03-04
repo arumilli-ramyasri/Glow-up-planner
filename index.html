@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GlowUp Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✨ GlowUp Planner</h1>
+</header>
+
+<div class="container">
+
+    <section class="form-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    
+    <section class="task-section">
+        <h2>Select Your Mood</h2>
+        <select id="moodSelect">
+            <option value="default">Normal</option>
+            <option value="happy">Happy 😊</option>
+            <option value="focus">Focus 📚</option>
+            <option value="chill">Chill 🌸</option>
+        </select>
+
+        <div class="task-box">
+            <input type="text" id="taskInput" placeholder="Add your task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
